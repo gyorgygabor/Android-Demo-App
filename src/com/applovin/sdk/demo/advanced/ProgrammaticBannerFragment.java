@@ -39,7 +39,6 @@ public class ProgrammaticBannerFragment extends ManagedFragment
         mBannerContainer = (LinearLayout) findFragmentViewById( R.id.banner_container );
     }
 
-
     @Override
     protected void setUpFragment()
     {

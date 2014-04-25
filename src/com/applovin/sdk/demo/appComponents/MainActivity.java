@@ -6,6 +6,7 @@ import android.app.Fragment;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import com.applovin.sdk.demo.R;
+import com.applovin.sdk.demo.advanced.ManualCachingFragment;
 import com.applovin.sdk.demo.advanced.ProgrammaticBannerFragment;
 import com.applovin.sdk.demo.advanced.ProgrammaticInterstitialFragment;
 import com.applovin.sdk.demo.advanced.RewardedVideoFragment;
@@ -95,6 +96,9 @@ public class MainActivity extends Activity implements ActionBar.OnNavigationList
                 return new ProgrammaticInterstitialFragment();
 
             case 4:
+                return new ManualCachingFragment();
+
+            case 5:
                 return new RewardedVideoFragment();
         }
 

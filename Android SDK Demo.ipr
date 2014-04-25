@@ -164,6 +164,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AppLovin-SDK-Demo.iml" filepath="$PROJECT_DIR$/AppLovin-SDK-Demo.iml" />
+      <module fileurl="file://$USER_HOME$/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/GPlay Services.iml" filepath="$USER_HOME$/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/GPlay Services.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="Android Platform, KitKat" project-jdk-type="Android SDK">
