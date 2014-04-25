@@ -10,6 +10,7 @@ import com.applovin.sdk.AppLovinAdClickListener;
 import com.applovin.sdk.AppLovinAdDisplayListener;
 import com.applovin.sdk.AppLovinAdLoadListener;
 import com.applovin.sdk.AppLovinAdVideoPlaybackListener;
+import com.applovin.sdk.AppLovinErrorCodes;
 import com.applovin.sdk.AppLovinSdk;
 import com.applovin.sdk.demo.R;
 import com.applovin.sdk.demo.appComponents.ManagedFragment;
@@ -55,9 +56,16 @@ public class ProgrammaticInterstitialFragment extends ManagedFragment
             }
 
             @Override
-            public void failedToReceiveAd(int i)
+            public void failedToReceiveAd(int errorCode)
             {
-                Toast.makeText( getActivity(), "Interstitial load failed: " + i, Toast.LENGTH_SHORT ).show();
+                if ( errorCode == AppLovinErrorCodes.NO_FILL )
+                {
+                    Toast.makeText( getActivity(), "No-fill: No ads are currently available for this device/country. " + errorCode, Toast.LENGTH_SHORT ).show();
+                }
+                else
+                {
+                    Toast.makeText( getActivity(), "Banner failed to load: " + errorCode, Toast.LENGTH_SHORT ).show();
+                }
             }
         } );
 
