@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Demo App</string>
+
+    <string name="title_activity_base">" "</string>
+
+    <string name="title_activity_splash">Splash</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_interstitial_list_view">Interstitials</string>
+    <string name="title_activity_interstitial_single_instance">Single Instance</string>
+    <string name="title_activity_interstitial_shared_instance">Shared Instance</string>
+    <string name="title_activity_interstitial_manual_loading">Manual Loading</string>
+
+    <string name="title_activity_rewarded_videos">Rewarded Videos</string>
+
+    <string name="title_activity_native_ad_list_view">Native Ads</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_single_native_ad">Single Ad</string>
+    <string name="title_activity_multiple_native_ads">Multiple Ads</string>
+</resources>
