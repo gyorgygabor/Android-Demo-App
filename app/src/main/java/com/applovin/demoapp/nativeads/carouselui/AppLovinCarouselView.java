@@ -78,15 +78,17 @@ public class AppLovinCarouselView extends FrameLayout implements AppLovinActivit
     public AppLovinCarouselView(Context context, AttributeSet attrs, int defStyleAttr, AppLovinSdk sdk, List<AppLovinNativeAd> nativeAds) {
         super(context, attrs, defStyleAttr);
 
-        this.sdk = sdk;
-        this.cardStates = new HashMap<Integer, InlineCarouselCardState>();
-        this.nativeAds = nativeAds;
+        if (!isInEditMode()) {
+            this.sdk = sdk;
+            this.cardStates = new HashMap<Integer, InlineCarouselCardState>();
+            this.nativeAds = nativeAds;
 
-        if (context instanceof Activity) {
-            parentActivity = (Activity) context;
+            if (context instanceof Activity) {
+                parentActivity = (Activity) context;
+            }
+
+            renderActivityIndicator();
         }
-
-        renderActivityIndicator();
     }
 
     /**

@@ -3,12 +3,11 @@
     android:layout_height="match_parent"
     tools:context="com.applovin.demoapp.nativeads.RecyclerViewNativeAdsActivity">
 
-    <view
-        class="com.applovin.demoapp.nativeads.carouselui.AppLovinCarouselView"
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
-        android:id="@+id/carouselView"
-        android:layout_gravity="center_horizontal"
-        android:paddingTop="10dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nativeAdsRecyclerView"
+        />
 
 </RelativeLayout>

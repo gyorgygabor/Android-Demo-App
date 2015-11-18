@@ -12,8 +12,8 @@
     <!-- These permissions are strongly recommended and will result in higher performance -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"

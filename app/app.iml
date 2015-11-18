@@ -100,7 +100,6 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.3.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.3.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services/8.3.0/jars" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.pkmmte.pkrss/pkrss/1.1.2/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jacoco" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javaResources" />
@@ -118,19 +117,15 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="okhttp-urlconnection-2.0.0" level="project" />
-    <orderEntry type="library" exported="" name="pkrss-1.1.2" level="project" />
     <orderEntry type="library" exported="" name="play-services-ads-8.3.0" level="project" />
-    <orderEntry type="library" exported="" name="okio-1.0.0" level="project" />
-    <orderEntry type="library" exported="" name="play-services-measurement-8.3.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-fitness-8.3.0" level="project" />
+    <orderEntry type="library" exported="" name="play-services-measurement-8.3.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-games-8.3.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-vision-8.3.0" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-23.1.1" level="project" />
     <orderEntry type="library" exported="" name="play-services-base-8.3.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-appindexing-8.3.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-auth-8.3.0" level="project" />
-    <orderEntry type="library" exported="" name="okhttp-2.0.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-drive-8.3.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-identity-8.3.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-appstate-8.3.0" level="project" />
@@ -139,9 +134,9 @@
     <orderEntry type="library" exported="" name="play-services-safetynet-8.3.0" level="project" />
     <orderEntry type="library" exported="" name="mediarouter-v7-22.2.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-plus-8.3.0" level="project" />
+    <orderEntry type="library" exported="" name="play-services-appinvite-8.3.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-8.3.0" level="project" />
     <orderEntry type="library" exported="" name="applovin-sdk-6.1.4.-javadoc" level="project" />
-    <orderEntry type="library" exported="" name="play-services-appinvite-8.3.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-cast-8.3.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-wearable-8.3.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-maps-8.3.0" level="project" />
