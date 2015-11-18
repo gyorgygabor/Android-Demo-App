@@ -17,12 +17,12 @@ import java.util.Set;
 /**
  * This activity simply inflates a default XML file that contains a carousel view, which will load its own ads into it.
  */
-public class MultipleNativeAdsActivity extends BaseActivity {
+public class RecyclerViewNativeAdsActivity extends BaseActivity {
 
     private RecyclerView                             recyclerView;
     private List<Article> feedItems = new ArrayList<Article>();
     private Set<WeakReference<AppLovinCarouselView>> onScreenCarousels = new HashSet<>();
-    private MultipleNativeAdsActivity                selfRef;
+    private RecyclerViewNativeAdsActivity selfRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

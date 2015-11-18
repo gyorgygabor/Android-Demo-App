@@ -67,11 +67,11 @@
             android:label="@string/title_activity_native_ad_list_view" >
         </activity>
         <activity
-            android:name=".nativeads.SingleNativeAdActivity"
+            android:name=".nativeads.CarouselUINativeAdActivity"
             android:label="@string/title_activity_single_native_ad" >
         </activity>
         <activity
-            android:name=".nativeads.MultipleNativeAdsActivity"
+            android:name=".nativeads.RecyclerViewNativeAdsActivity"
             android:label="@string/title_activity_multiple_native_ads" >
         </activity>
     </application>

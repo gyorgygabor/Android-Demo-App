@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import com.applovin.demoapp.BaseActivity;
 import com.applovin.demoapp.R;
 
-public class SingleNativeAdActivity extends BaseActivity {
+public class CarouselUINativeAdActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

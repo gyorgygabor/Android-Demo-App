@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="applovin-sdk-6.1.4.-javadoc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/applovin-sdk-6.1.4.-javadoc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

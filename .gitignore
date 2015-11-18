@@ -23,3 +23,10 @@ local.properties
 proguard/
 
 *.jar
+
+.idea/
+.idea
+/.idea
+/.idea/
+
+.idea/libraries/appcompat_v7_23_1_1.xml

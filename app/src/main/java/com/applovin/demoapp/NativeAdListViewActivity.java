@@ -14,8 +14,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.applovin.demoapp.nativeads.MultipleNativeAdsActivity;
-import com.applovin.demoapp.nativeads.SingleNativeAdActivity;
+import com.applovin.demoapp.nativeads.RecyclerViewNativeAdsActivity;
+import com.applovin.demoapp.nativeads.CarouselUINativeAdActivity;
 
 public class NativeAdListViewActivity extends BaseActivity {
 
@@ -63,10 +63,10 @@ public class NativeAdListViewActivity extends BaseActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 if (position == POSITION_SINGLE) {
-                    Intent intent = new Intent(NativeAdListViewActivity.this, SingleNativeAdActivity.class);
+                    Intent intent = new Intent(NativeAdListViewActivity.this, CarouselUINativeAdActivity.class);
                     startActivity(intent);
                 } else if (position == POSITION_MULTIPLE) {
-                    Intent intent = new Intent(NativeAdListViewActivity.this, MultipleNativeAdsActivity.class);
+                    Intent intent = new Intent(NativeAdListViewActivity.this, RecyclerViewNativeAdsActivity.class);
                     startActivity(intent);
                 }
             }
