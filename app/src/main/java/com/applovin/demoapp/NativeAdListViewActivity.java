@@ -14,17 +14,17 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.applovin.demoapp.nativeads.RecyclerViewNativeAdsActivity;
 import com.applovin.demoapp.nativeads.CarouselUINativeAdActivity;
+import com.applovin.demoapp.nativeads.RecyclerViewNativeAdsActivity;
 
 public class NativeAdListViewActivity extends BaseActivity {
 
-    private static final int POSITION_SINGLE   = 0;
+    private static final int POSITION_SINGLE = 0;
     private static final int POSITION_MULTIPLE = 1;
 
     private ListItem[] items = {
-            new ListItem("Single ad", "Programatically load an ad to layout"),
-            new ListItem("Multiple ads", "Use our open-source carousel view in a feed")
+            new ListItem("Single ad", "Programatically load an ad using our open-source carousel view"),
+            new ListItem("Multiple ads", "Simple native ads in a RecyclerView")
     };
 
     private ListView listView;
@@ -79,8 +79,7 @@ public class NativeAdListViewActivity extends BaseActivity {
         footer.setPadding(0, 20, 0, 0);
         footer.setGravity(Gravity.CENTER);
         footer.setTextSize(18);
-        footer.setTextColor(Color.RED)
-        ;
+        footer.setTextColor(Color.RED);
         footer.setText(Html.fromHtml("You must turn <b>ON</b> \" Native Ads\" in your AppLovin dashboard"));
 
         listView.addFooterView(footer);
