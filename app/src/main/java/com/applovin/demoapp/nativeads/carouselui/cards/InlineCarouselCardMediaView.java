@@ -385,7 +385,7 @@ public class InlineCarouselCardMediaView extends FrameLayout implements TextureV
         autoplayVideo();
     }
 
-    protected void autoplayVideo() {
+    public void autoplayVideo() {
         if (AppLovinSdkUtils.isValidString(ad.getVideoUrl())) {
             if (!cardState.isReplayOverlayVisible() && ad.isVideoPrecached()) {
                 if (mediaPlayer != null && mediaPlayerPrepared && !mediaPlayer.isPlaying()) {
