@@ -22,7 +22,7 @@
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="applovin.sdk.key"
-            android:value="Ugfn9lczZcty3795F369kHSrVa-LHQ-n6eXGN9Exm5uqC1wS40cpH3doeb7x16h8lDO6Nc28ixzvytM0uzp91R" />
+            android:value="YOUR_SDK_KEY_HERE" />
         <meta-data
             android:name="applovin.sdk.verbose_logging"
             android:value="true" />
