@@ -16,6 +16,8 @@ import com.applovin.demoapp.BaseActivity;
 import com.applovin.demoapp.R;
 import com.applovin.nativeAds.AppLovinNativeAd;
 import com.applovin.nativeAds.AppLovinNativeAdLoadListener;
+import com.applovin.nativeAds.AppLovinNativeAdPrecacheListener;
+import com.applovin.nativeAds.AppLovinNativeAdService;
 import com.applovin.sdk.AppLovinSdk;
 import com.applovin.sdk.AppLovinSdkUtils;
 
@@ -39,9 +41,11 @@ public class RecyclerViewNativeAdsActivity extends BaseActivity {
         final AppLovinSdk sdk = AppLovinSdk.getInstance(this);
         final Activity activityRef = this;
 
-        sdk.getNativeAdService().loadNativeAds(10, new AppLovinNativeAdLoadListener() {
+        final AppLovinNativeAdService nativeAdService = sdk.getNativeAdService();
+        nativeAdService.loadNativeAds(10, new AppLovinNativeAdLoadListener() {
             @Override
             public void onNativeAdsLoaded(final List /* <AppLovinNativeAd> */ list) {
+                retrieveImageResources(nativeAdService, list);
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -61,6 +65,47 @@ public class RecyclerViewNativeAdsActivity extends BaseActivity {
                 });
             }
         });
+    }
+
+    private void retrieveImageResources(final AppLovinNativeAdService nativeAdService, final List <AppLovinNativeAd> nativeAds)
+    {
+        final Activity thisRef = this;
+
+        for (final AppLovinNativeAd nativeAd : nativeAds)
+        {
+            nativeAdService.precacheResources(nativeAd, new AppLovinNativeAdPrecacheListener() {
+                @Override
+                public void onNativeAdImagesPrecached(final AppLovinNativeAd appLovinNativeAd) {
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            final NativeAdRecyclerViewAdapter adapter = (NativeAdRecyclerViewAdapter) recyclerView.getAdapter();
+                            adapter.notifyItemChanged(nativeAds.indexOf(appLovinNativeAd));
+                        }
+                    });
+                }
+
+                @Override
+                public void onNativeAdVideoPreceached(AppLovinNativeAd appLovinNativeAd) {
+                    // This example does not implement videos; see CarouselUINativeAdActivity for an example of a widget which does.
+                }
+
+                @Override
+                public void onNativeAdImagePrecachingFailed(final AppLovinNativeAd appLovinNativeAd, final int errorCode) {
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(thisRef, "Failed to load images for native ad: " + errorCode, Toast.LENGTH_LONG).show();
+                        }
+                    });
+                }
+
+                @Override
+                public void onNativeAdVideoPrecachingFailed(AppLovinNativeAd appLovinNativeAd, int i) {
+                    // This example does not implement videos; see CarouselUINativeAdActivity for an example of a widget which does.
+                }
+            });
+        }
     }
 
     private void renderRecyclerView(final List<AppLovinNativeAd> nativeAds) {
