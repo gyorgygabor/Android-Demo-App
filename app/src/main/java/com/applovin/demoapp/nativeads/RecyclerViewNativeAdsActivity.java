@@ -45,11 +45,11 @@ public class RecyclerViewNativeAdsActivity extends BaseActivity {
         nativeAdService.loadNativeAds(10, new AppLovinNativeAdLoadListener() {
             @Override
             public void onNativeAdsLoaded(final List /* <AppLovinNativeAd> */ list) {
-                retrieveImageResources(nativeAdService, list);
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         renderRecyclerView(list);
+                        retrieveImageResources(nativeAdService, list);
                     }
                 });
             }
