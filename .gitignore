@@ -26,3 +26,7 @@ proguard/
 
 .idea/
 *.iml
+
+.idea/libraries/applovin_sdk_6_1_4_javadoc.xml
+
+app/app.iml
